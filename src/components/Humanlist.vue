@@ -6,11 +6,107 @@
           <i class="el-icon-arrow-left" style="font-size: 30px;color: white" @click="goBack"></i>
         </div>
         <div class="title_text">
-          <span style="color: #267F2F">聊天室</span>
+          <span style="color: #267F2F">通讯录</span>
         </div>
       </div>
       <div class="chat">
-        <span class="images"></span>
+        <span class="images" style="background-image: url('../../static/images/150_1.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_2.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_4.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_5.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_4.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_5.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_1.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_2.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_1.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_2.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_1.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_2.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
         <span class="title">
           黑色帝国之王者归来........
         </span>

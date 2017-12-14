@@ -10,11 +10,30 @@
         </div>
       </div>
       <div class="chat">
-        <span class="images"></span>
+        <span class="images" style="background-image: url('../../static/images/150_1.jpg')"></span>
         <span class="title">
           黑色帝国之王者归来........
         </span>
       </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_2.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+      <div class="chat">
+        <span class="images" style="background-image: url('../../static/images/150_4.jpg')"></span>
+        <span class="title">
+          黑色帝国之王者归来........
+        </span>
+      </div>
+
       <div class="foot">
         <div @click="chat"><i class="mf mf-chat"></i><div>聊天室</div></div>
         <div @click="humanlist"><i class="mf mf-humanlist"></i><div>通讯录</div></div>

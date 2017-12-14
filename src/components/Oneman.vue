@@ -6,13 +6,16 @@
           <i class="el-icon-arrow-left" style="font-size: 30px;color: white" @click="goBack"></i>
         </div>
         <div class="title_text">
-          <span style="color: #267F2F">聊天室</span>
+          <span style="color: #267F2F">个人中心</span>
         </div>
       </div>
       <div class="chat">
-        <span class="images"></span>
+        <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
         <span class="title">
-          黑色帝国之王者归来........
+          昵称：黑色帝国
+        </span>
+        <span class="id">
+          ID：000100A
         </span>
       </div>
       <div class="foot">
@@ -87,7 +90,7 @@
       position: relative;
       width: 1080px;
       height: 200px;
-      line-height: 200px;
+      /*line-height: 200px;*/
       box-sizing: border-box;
       border-bottom: 1px solid #f1f1f1;
       .images{
@@ -103,6 +106,14 @@
         position: absolute;
         font-size: 36px;
         left: 200px;
+        top: 55px;
+        color: #c0c0c0;
+      }
+      .id{
+        position: absolute;
+        font-size: 24px;
+        left: 200px;
+        top: 125px;
         color: #c0c0c0;
       }
     }
