@@ -45,13 +45,26 @@
       </div>
       <div class="login">
         <span class="name">还未拥有账号请</span>
-        <el-button>注 册</el-button>
+        <el-button @click="register">注 册</el-button>
       </div>
     </div>
   </div>
 </template>
 <script type="text/ecmascript-6">
+  export default{
+    data () {
+      return {
 
+      }
+    },
+    methods: {
+      register () {
+        this.$router.push({
+          path: '/Register'
+        })
+      }
+    }
+  }
 </script>
 <style lang="less" scoped="scoped">
   #paper{

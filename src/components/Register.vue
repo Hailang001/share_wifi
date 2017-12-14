@@ -35,17 +35,34 @@
         </div>
       </div>
       <div class="register">
-        <span>注 册</span>
+        <span @click="skip">注 册</span>
       </div>
       <div class="login">
         <span class="name">已有账号</span>
-        <el-button>登 录</el-button>
+        <el-button @click="login">登 录</el-button>
       </div>
     </div>
   </div>
 </template>
 <script type="text/ecmascript-6">
-
+  export default{
+    data () {
+      return {
+      }
+    },
+    methods: {
+      login () {
+        this.$router.push({
+          path: '/Login'
+        })
+      },
+      skip () {
+        this.$router.push({
+          path: '/Skip'
+        })
+      }
+    }
+  }
 </script>
 <style lang="less" scoped="scoped">
  #paper{

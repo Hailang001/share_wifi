@@ -3,7 +3,7 @@
     <div id="paper">
       <div id="header">
         <div id="go_back">
-          <i class="el-icon-arrow-left" style="font-size: 30px;color: white"></i>
+          <i class="el-icon-arrow-left" style="font-size: 30px;color: white" @click="goBack"></i>
         </div>
         <div class="title_text">
           <span style="color: #267F2F">附近WIFI</span>
@@ -21,10 +21,10 @@
         </div>
       </div>
       <div class="foot">
-        <div><i class="mf mf-chat"></i></div>
-        <div><i class="mf mf-humanlist"></i></div>
-        <div><i class="mf mf-radar"></i></div>
-        <div><i class="mf mf-oneman"></i></div>
+        <div @click="chat"><i class="mf mf-chat"></i></div>
+        <div @click="humanlist"><i class="mf mf-humanlist"></i></div>
+        <div @click="radar"><i class="mf mf-radar"></i></div>
+        <div @click="oneman"><i class="mf mf-oneman"></i></div>
       </div>
     </div>
   </div>
@@ -36,6 +36,29 @@
       }
     },
     methods: {
+      chat () {
+        this.$router.push({
+          path: '/Chat'
+        })
+      },
+      humanlist () {
+        this.$router.push({
+          path: '/Humanlist'
+        })
+      },
+      radar () {
+        this.$router.push({
+          path: '/Radar'
+        })
+      },
+      oneman () {
+        this.$router.push({
+          path: '/Oneman'
+        })
+      },
+      goBack () {
+        this.$router.go(-1)
+      }
     },
     mounted () {
     }
@@ -181,6 +204,9 @@
         line-height: 180px;
         color: #fff;
         flex: 1;
+        :hover{
+          color: #AED931;
+        }
       }
       .mf-radar{
         color: #AED931;

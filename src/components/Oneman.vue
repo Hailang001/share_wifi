@@ -130,7 +130,7 @@
           color: #c0c0c0;
         }
       }
-      .mf-chat{
+      .mf-oneman{
         color: #AED931;
       }
     }
