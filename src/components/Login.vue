@@ -19,13 +19,13 @@
           <i class="mf mf-oneman"></i>
           <span>账户</span>
           <i class="el-icon-minus" style="font-size: 16px;transform:rotate(90deg)"></i>
-          <input type="text" placeholder="请输入账户名">
+          <input type="text" placeholder="请输入账户名" id="name">
         </div>
         <div class="password">
           <i class="mf mf-mima"></i>
           <span>密码</span>
           <i class="el-icon-minus" style="font-size: 16px;transform:rotate(90deg)"></i>
-          <input type="text" placeholder="请输入密码">
+          <input type="text" placeholder="请输入密码" id="password">
         </div>
         <!--<div class="affirm">
           <i class="mf mf-mima"></i>
@@ -35,7 +35,7 @@
         </div>-->
       </div>
       <div class="register">
-        <div class="login_">
+        <div class="login_" @click="login">
           <span>登 录</span>
         </div>
         <div class="text_btn">
@@ -54,7 +54,8 @@
   export default{
     data () {
       return {
-
+        name:'',
+        password:''
       }
     },
     methods: {
@@ -62,6 +63,21 @@
         this.$router.push({
           path: '/Register'
         })
+      },
+      login () {
+        let name = document.getElementById('name').value
+        let password = document.getElementById('password').value
+        if (name === 'admin' &&  password === 'admin123') {
+          this.$router.push({
+            path: '/Radar'
+          })
+        }else {
+          this.$notify({
+            title: '警告',
+            message: '用户名或者密码错误',
+            type: 'warning'
+          });
+        }
       }
     }
   }

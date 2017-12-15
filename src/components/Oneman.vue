@@ -18,6 +18,21 @@
           ID：000100A
         </span>
       </div>
+      <div class="text_bnt">
+        <i class="el-icon-picture-outline"></i><span class="text">相册</span>
+      </div>
+      <div class="text_bnt">
+        <i class="el-icon-service"></i><span class="text">客服</span>
+      </div>
+      <div class="text_bnt">
+        <i class="el-icon-location-outline"></i><span class="text">地图</span>
+      </div>
+      <div class="text_bnt">
+        <i class="el-icon-setting"></i><span class="text">设置</span>
+      </div>
+      <div class="text_bnt get_out" @click="getOut">
+        <i class="el-icon-d-arrow-right"></i><span class="text">退出</span>
+      </div>
       <div class="foot">
         <div @click="chat"><i class="mf mf-chat"></i><div>聊天室</div></div>
         <div @click="humanlist"><i class="mf mf-humanlist"></i><div>通讯录</div></div>
@@ -56,6 +71,11 @@
       },
       goBack () {
         this.$router.go(-1)
+      },
+      getOut () {
+        this.$router.push({
+          path: '/Login'
+        })
       }
     },
     mounted () {
@@ -64,6 +84,7 @@
 </script>
 <style lang="less" scoped="scoped">
   #paper{
+    position: relative;
     width: 1080px;
     height: 1920px;
     background-color: #fff;
@@ -117,8 +138,24 @@
         color: #c0c0c0;
       }
     }
+    .text_bnt{
+      width: 1080px;
+      height: 100px;
+      line-height: 100px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #f1f1f1;
+      font-size: 36px;
+      :hover{
+        cursor: pointer;
+      }
+      .text{
+        margin-left: 100px;
+        color: #c0c0c0;
+      }
+    }
     .foot{
-      margin-top: 1740px;
+      position: absolute;
+      bottom: 0px;
       height: 180px;
       width: 100%;
       box-sizing: border-box;
@@ -133,6 +170,7 @@
         color: #fff;
         flex: 1;
         :hover{
+          cursor: pointer;
           color: #AED931;
         }
         >div{

@@ -21,10 +21,10 @@
         </div>
       </div>
       <div class="foot">
-        <div @click="chat"><i class="mf mf-chat"></i></div>
-        <div @click="humanlist"><i class="mf mf-humanlist"></i></div>
-        <div @click="radar"><i class="mf mf-radar"></i></div>
-        <div @click="oneman"><i class="mf mf-oneman"></i></div>
+        <div @click="chat"><i class="mf mf-chat"></i><div>聊天室</div></div>
+        <div @click="humanlist"><i class="mf mf-humanlist"></i><div>通讯录</div></div>
+        <div @click="radar"><i class="mf mf-radar"></i><div>雷达</div></div>
+        <div @click="oneman"><i class="mf mf-oneman"></i><div>我</div></div>
       </div>
     </div>
   </div>
@@ -66,6 +66,7 @@
 </script>
 <style lang="less" scoped="scoped">
   #paper{
+    position: relative;
     width: 1080px;
     height: 1920px;
     background-color: #f1f1f1;
@@ -189,23 +190,29 @@
       }
     }
     .foot{
-      position: relative;
-      bottom: 0;
-      left: 0;
-      margin-top: 1740px;
+      position: absolute;
+      bottom: 0px;
       height: 180px;
       width: 100%;
       box-sizing: border-box;
       background-color: #e7e7e7;
       display: flex;
-      div{
-        font-size: 100px;
-        height: 180px;
-        line-height: 180px;
+      >div{
+        font-size: 80px;
+        height: 140px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        /*line-height: 180px;*/
         color: #fff;
         flex: 1;
         :hover{
+          cursor: pointer;
           color: #AED931;
+        }
+        >div{
+          margin-top: 10px;
+          font-size: 24px;
+          color: #c0c0c0;
         }
       }
       .mf-radar{

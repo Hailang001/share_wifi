@@ -57,60 +57,6 @@
           黑色帝国之王者归来........
         </span>
       </div>
-      <div class="chat">
-        <span class="images" style="background-image: url('../../static/images/150_1.jpg')"></span>
-        <span class="title">
-          黑色帝国之王者归来........
-        </span>
-      </div>
-      <div class="chat">
-        <span class="images" style="background-image: url('../../static/images/150_2.jpg')"></span>
-        <span class="title">
-          黑色帝国之王者归来........
-        </span>
-      </div>
-      <div class="chat">
-        <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
-        <span class="title">
-          黑色帝国之王者归来........
-        </span>
-      </div>
-      <div class="chat">
-        <span class="images" style="background-image: url('../../static/images/150_1.jpg')"></span>
-        <span class="title">
-          黑色帝国之王者归来........
-        </span>
-      </div>
-      <div class="chat">
-        <span class="images" style="background-image: url('../../static/images/150_2.jpg')"></span>
-        <span class="title">
-          黑色帝国之王者归来........
-        </span>
-      </div>
-      <div class="chat">
-        <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
-        <span class="title">
-          黑色帝国之王者归来........
-        </span>
-      </div>
-      <div class="chat">
-        <span class="images" style="background-image: url('../../static/images/150_1.jpg')"></span>
-        <span class="title">
-          黑色帝国之王者归来........
-        </span>
-      </div>
-      <div class="chat">
-        <span class="images" style="background-image: url('../../static/images/150_2.jpg')"></span>
-        <span class="title">
-          黑色帝国之王者归来........
-        </span>
-      </div>
-      <div class="chat">
-        <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
-        <span class="title">
-          黑色帝国之王者归来........
-        </span>
-      </div>
       <div class="foot">
         <div @click="chat"><i class="mf mf-chat"></i><div>聊天室</div></div>
         <div @click="humanlist"><i class="mf mf-humanlist"></i><div>通讯录</div></div>
@@ -157,6 +103,7 @@
 </script>
 <style lang="less" scoped="scoped">
   #paper{
+    position: relative;
     width: 1080px;
     height: 1920px;
     background-color: #fff;
@@ -186,6 +133,9 @@
       line-height: 200px;
       box-sizing: border-box;
       border-bottom: 1px solid #f1f1f1;
+      :hover{
+        cursor: pointer;
+      }
       .images{
         display: inline-block;
         position: absolute;
@@ -203,6 +153,8 @@
       }
     }
     .foot{
+      position: absolute;
+      bottom: 0px;
       margin-top: 1740px;
       height: 180px;
       width: 100%;
@@ -218,6 +170,7 @@
         color: #fff;
         flex: 1;
         :hover{
+          cursor: pointer;
           color: #AED931;
         }
         >div{

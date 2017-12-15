@@ -80,6 +80,7 @@
 </script>
 <style lang="less" scoped="scoped">
   #paper{
+    position: relative;
     width: 1080px;
     height: 1920px;
     background-color: #fff;
@@ -109,6 +110,9 @@
       line-height: 200px;
       box-sizing: border-box;
       border-bottom: 1px solid #f1f1f1;
+      :hover{
+        cursor: pointer;
+      }
       .images{
         display: inline-block;
         position: absolute;
@@ -126,7 +130,8 @@
       }
     }
     .foot{
-      margin-top: 1740px;
+      position: absolute;
+      bottom: 0px;
       height: 180px;
       width: 100%;
       box-sizing: border-box;
@@ -141,6 +146,7 @@
         color: #fff;
         flex: 1;
         :hover{
+          cursor: pointer;
           color: #AED931;
         }
         >div{
