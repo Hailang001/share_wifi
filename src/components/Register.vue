@@ -19,19 +19,19 @@
           <i class="mf mf-oneman"></i>
           <span>账户</span>
           <i class="el-icon-minus" style="font-size: 16px;transform:rotate(90deg)"></i>
-          <input type="text" placeholder="请输入账户名">
+          <input type="text" placeholder="请输入账户名" id="name">
         </div>
         <div class="password">
           <i class="mf mf-mima"></i>
           <span>密码</span>
           <i class="el-icon-minus" style="font-size: 16px;transform:rotate(90deg)"></i>
-          <input type="text" placeholder="请输入密码">
+          <input type="password" placeholder="请输入密码" id="password">
         </div>
         <div class="affirm">
           <i class="mf mf-mima"></i>
           <span>确认</span>
           <i class="el-icon-minus" style="font-size: 16px;transform:rotate(90deg)"></i>
-          <input type="text" placeholder="请再次输入密码确认">
+          <input type="password" placeholder="请再次输入密码确认" id="passwords">
         </div>
       </div>
       <div class="register">
@@ -57,9 +57,32 @@
         })
       },
       skip () {
-        this.$router.push({
-          path: '/Skip'
-        })
+        let name = document.getElementById('name').value
+        let password = document.getElementById('password').value
+        let passwords = document.getElementById('passwords').value
+        if (name.length !== 0 && password.length !== 0 && password === passwords) {
+          this.$router.push({
+            path: '/Skip'
+          })
+        } else if (name.length === 0) {
+          this.$notify({
+            title: '警告',
+            message: '用户名不能为空',
+            type: 'warning'
+          })
+        } else if (password.length === 0) {
+          this.$notify({
+            title: '警告',
+            message: '密码不能为空',
+            type: 'warning'
+          })
+        } else if (password !== passwords) {
+          this.$notify({
+            title: '警告',
+            message: '密码和上面的不一致,请重新填写',
+            type: 'warning'
+          })
+        }
       }
     }
   }
@@ -138,6 +161,7 @@
      line-height: 60px;
      margin-top: 200px;
      background-color: #AED931;
+     cursor: pointer;
      color: white;
    }
    .login{

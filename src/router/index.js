@@ -6,6 +6,7 @@ import Login from '../components/Login.vue'
 import Skip from '../components/Skip.vue'
 import Radar from '../components/Radar.vue'
 import Chat from '../components/Chat.vue'
+import Chats from '../components/Charts.vue'
 import Humanlist from '../components/Humanlist.vue'
 import Oneman from '../components/Oneman.vue'
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/Chat',
       name: 'Chat',
       component: Chat
+    },
+    {
+      path: '/Chats',
+      name: 'Chats',
+      component: Chats
     },
     {
       path: '/Humanlist',

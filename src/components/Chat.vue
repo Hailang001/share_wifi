@@ -9,31 +9,34 @@
           <span style="color: #267F2F">聊天室</span>
         </div>
       </div>
-      <div class="chat">
+      <div class="chat" @click="toChats">
         <span class="images" style="background-image: url('../../static/images/150_1.jpg')"></span>
         <span class="title">
           黑色帝国之王者归来........
         </span>
+        <span class="time">21:23</span>
       </div>
-      <div class="chat">
+      <div class="chat" @click="toChats">
         <span class="images" style="background-image: url('../../static/images/150_2.jpg')"></span>
         <span class="title">
           黑色帝国之王者归来........
         </span>
+        <span class="time">21:23</span>
       </div>
-      <div class="chat">
+      <div class="chat" @click="toChats">
         <span class="images" style="background-image: url('../../static/images/150_3.jpg')"></span>
         <span class="title">
           黑色帝国之王者归来........
         </span>
+        <span class="time">21:23</span>
       </div>
-      <div class="chat">
+      <div class="chat" @click="toChats">
         <span class="images" style="background-image: url('../../static/images/150_4.jpg')"></span>
         <span class="title">
           黑色帝国之王者归来........
         </span>
+        <span class="time">21:23</span>
       </div>
-
       <div class="foot">
         <div @click="chat"><i class="mf mf-chat"></i><div>聊天室</div></div>
         <div @click="humanlist"><i class="mf mf-humanlist"></i><div>通讯录</div></div>
@@ -50,6 +53,11 @@
       }
     },
     methods: {
+      toChats () {
+        this.$router.push({
+          path: '/Chats'
+        })
+      },
       chat () {
         this.$router.push({
           path: '/Chat'
@@ -126,6 +134,12 @@
         position: absolute;
         font-size: 36px;
         left: 200px;
+        color: #c0c0c0;
+      }
+      .time{
+        position: absolute;
+        font-size: 24px;
+        left: 1000px;
         color: #c0c0c0;
       }
     }

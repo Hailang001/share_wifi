@@ -147,6 +147,7 @@
       font-size: 36px;
       :hover{
         cursor: pointer;
+        color: #AED931;
       }
       .text{
         margin-left: 100px;

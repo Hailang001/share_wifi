@@ -25,7 +25,7 @@
           <i class="mf mf-mima"></i>
           <span>密码</span>
           <i class="el-icon-minus" style="font-size: 16px;transform:rotate(90deg)"></i>
-          <input type="text" placeholder="请输入密码" id="password">
+          <input type="password" placeholder="请输入密码" id="password">
         </div>
         <!--<div class="affirm">
           <i class="mf mf-mima"></i>
@@ -54,8 +54,8 @@
   export default{
     data () {
       return {
-        name:'',
-        password:''
+        name: '',
+        password: ''
       }
     },
     methods: {
@@ -67,16 +67,16 @@
       login () {
         let name = document.getElementById('name').value
         let password = document.getElementById('password').value
-        if (name === 'admin' &&  password === 'admin123') {
+        if (name === 'admin' && password === 'admin123') {
           this.$router.push({
             path: '/Radar'
           })
-        }else {
+        } else {
           this.$notify({
             title: '警告',
             message: '用户名或者密码错误',
             type: 'warning'
-          });
+          })
         }
       }
     }
