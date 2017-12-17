@@ -15,10 +15,10 @@
       </div>
       <div class="foot">
         <div class="yuyin"><i class="mf mf-yuyin" @click="chat"></i></div>
-        <div class="content"><el-input type="textarea" v-model="text_1"></el-input></div>
+        <div class="content"><el-input type="textarea" v-model="text_1" @keydown.enter.prevent.native="send"></el-input></div>
         <div class="add"  v-if="show_"><i class="mf mf-add" @click="chat"></i></div>
         <div class="xiaolian"><i class="mf mf-xiaolian" @click="chat"></i></div>
-        <div class="fasong" v-if="!show_"><i class="mf mf-fasong"@click="send"></i></div>
+        <div class="fasong" v-if="!show_"><i class="mf mf-fasong" @click="send"></i></div>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@
     },
     methods: {
       toShow () {
-        if (this.text_1.length === '') {
+        if (this.text_1.length === 0) {
           this.show_ = true
         } else {
           this.show_ = false
@@ -57,7 +57,7 @@
         })
       },
       send () {
-        this.content.push(this.text_1);
+        this.content.push(this.text_1)
         this.text_1 = ''
       },
       goBack () {
@@ -107,6 +107,7 @@
       width: 700px;
       height: auto;
       box-sizing: border-box;
+      background-color: #f5f7fa;
       border: 1px solid #f1f1f1;
       border-radius: 5px;
       padding: 20px 30px;
@@ -117,7 +118,7 @@
         transform:rotate(-45deg);
         height: 20px;
         width: 20px;
-        background-color: white;
+        background-color: #f5f7fa;
         border: 1px;
         border-style:  solid;
         border-color: transparent #f1f1f1 #f1f1f1 transparent;

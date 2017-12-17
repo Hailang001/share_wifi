@@ -19,19 +19,19 @@
           <i class="mf mf-oneman"></i>
           <span>账户</span>
           <i class="el-icon-minus" style="font-size: 16px;transform:rotate(90deg)"></i>
-          <input type="text" placeholder="请输入账户名" id="name">
+          <input type="text" placeholder="请输入账户名" id="name" @keydown.enter.prevent="skip">
         </div>
         <div class="password">
           <i class="mf mf-mima"></i>
           <span>密码</span>
           <i class="el-icon-minus" style="font-size: 16px;transform:rotate(90deg)"></i>
-          <input type="password" placeholder="请输入密码" id="password">
+          <input type="password" placeholder="请输入密码" id="password" @keydown.enter.prevent="skip">
         </div>
         <div class="affirm">
           <i class="mf mf-mima"></i>
           <span>确认</span>
           <i class="el-icon-minus" style="font-size: 16px;transform:rotate(90deg)"></i>
-          <input type="password" placeholder="请再次输入密码确认" id="passwords">
+          <input type="password" placeholder="请再次输入密码确认" id="passwords" @keydown.enter.prevent="skip">
         </div>
       </div>
       <div class="register">
